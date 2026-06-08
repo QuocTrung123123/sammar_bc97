@@ -21,9 +21,9 @@ mặc định element của HTML mặc định xếp theo kiểu blcok, xếp d�
   /* muốn thẻ navbar nằm giữa web thì thẻ width của thẻ con phải nhỏ hơn width của thẻ cha */
   width: 70%;
   margin: auto;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
-  gap: 5px;
+  gap: 80px;
 }
 header ul {
   list-style: none;
@@ -74,18 +74,20 @@ header a i {
   background-position: right center;
 }
 .carousel {
-  background-image: url("../img/pic2.png");
+  background-image: url("./img/pic2.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 700px;
+  height: 900px;
   /* position: relative; */
   display: flex;
   padding-left: 15%;
   align-items: center;
   box-sizing: border-box;
   width: 100%;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  gap: 100px;
+  margin: auto;
 }
 .carousel_content h1 {
   font-size: 22px;
@@ -104,11 +106,14 @@ header a i {
   margin-bottom: 15px;
   font-weight: 200;
 }
-.carousel_image {
+.carousel_image img {
   margin-bottom: 20px;
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
-  width: 70%;
-  max-width: 400px;
+  width: 100%;
+  height: auto;
+  object-fit: content;
+  max-width: 500px;
+  margin: auto;
 }
