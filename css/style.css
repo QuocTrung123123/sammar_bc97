@@ -117,3 +117,31 @@ header a i {
   max-width: 500px;
   margin: auto;
 }
+/* list-style phải đặt vào thẻ ul hoặc li mới có tác dụng */
+.carousel_effect {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.carousel_effect a {
+  text-decoration: none;
+
+  color: black;
+  font-weight: 200;
+}
+.carousel_effect i {
+  /* tạo hình tròn gradient */
+  background-image: linear-gradient(to right, #f55f8d, #f8ae56 51%);
+  color: white;
+  /* kích thước và hình dạng */
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  /* căn giữa icon bên trong */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* khoảng cách với chữ */
+  margin-right: 10px;
+  font-size: 14px;
+}
