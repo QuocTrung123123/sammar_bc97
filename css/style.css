@@ -1,0 +1,114 @@
+/*! dùng chung */
+/* * FONT */
+html,
+body {
+  font-family: "Roboto", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  padding: 20px 0;
+  position: absolute;
+  width: 100%;
+}
+/* !căn giữa thanh navbar giữa web */
+header nav {
+  /* cần sắp xếp thẻ con nào thì tìm thẻ cha đó rồi xét display: flex 
+mặc định element của HTML mặc định xếp theo kiểu blcok, xếp dọc, muốn xếp ngang thì display: flex*/
+  display: flex;
+  /* muốn thẻ navbar nằm giữa web thì thẻ width của thẻ con phải nhỏ hơn width của thẻ cha */
+  width: 70%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 50px;
+  padding: 55px 15px;
+  font-size: 17px;
+}
+header li a {
+  text-decoration: none;
+  color: black;
+  display: inline-flex;
+  align-items: center;
+}
+
+header a i {
+  font-size: 7px;
+}
+/* TODO   TRẠNG THÁI TRƯỚC KHI RÊ CHUỘT */
+.btn-gradient {
+  background-image: linear-gradient(
+    to right,
+    #f55f8d,
+    #f8ae56 51%,
+    #f55f8d 100%
+  );
+  padding: 25px 30px;
+  background-color: #f55f8d;
+  /* đặt ví trí ban đầu của dài màu nằm ở góc bên trái */
+  background-position: left center;
+
+  /* xóa viền */
+  border: none;
+  /* thay đổi con trỏ chuột 
+  thành bàn tay khi di chuyển 
+  vào nút bấm */
+  cursor: pointer;
+  /* phóng to dải màu to ra gấp đôi theo chiều ngang */
+  background-size: 200% auto;
+  color: white;
+  transition: background-position 0.6s ease-in-out;
+  border-radius: 18px;
+}
+/* TODO TRẠNG THÁI SAU KHI RÊ CHUỘT */
+.btn-gradient:hover {
+  background-position: right center;
+}
+.carousel {
+  background-image: url("../img/pic2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  /* position: relative; */
+  display: flex;
+  padding-left: 15%;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  justify-content: space-between;
+}
+.carousel_content h1 {
+  font-size: 22px;
+  color: #f55f8d;
+  margin-bottom: 20px;
+}
+.carousel_content p {
+  font-size: 70px;
+  color: #262626;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 15px;
+}
+.carousel_content h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 200;
+}
+.carousel_image {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  max-width: 400px;
+}
