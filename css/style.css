@@ -1,4 +1,5 @@
 /*! dùng chung */
+
 /* * FONT */
 html,
 body {
@@ -89,6 +90,10 @@ header a i {
   gap: 100px;
   margin: auto;
 }
+.carousel_content {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
 .carousel_content h1 {
   font-size: 22px;
   color: #f55f8d;
@@ -103,7 +108,7 @@ header a i {
 }
 .carousel_content h2 {
   font-size: 18px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   font-weight: 200;
 }
 .carousel_image img {
@@ -128,6 +133,7 @@ header a i {
 
   color: black;
   font-weight: 200;
+  margin-bottom: 20px;
 }
 .carousel_effect i {
   /* tạo hình tròn gradient */
@@ -144,4 +150,62 @@ header a i {
   /* khoảng cách với chữ */
   margin-right: 10px;
   font-size: 14px;
+  margin-bottom: 10px;
+}
+.btn-gradient {
+  background-image: linear-gradient(
+    to right,
+    #f55f8d,
+    #f8ae56 51%,
+    #f55f8d 100%
+  );
+  padding: 25px 30px;
+  background-color: #f55f8d;
+  /* đặt ví trí ban đầu của dài màu nằm ở góc bên trái */
+  background-position: left center;
+
+  /* xóa viền */
+  border: none;
+  /* thay đổi con trỏ chuột 
+  thành bàn tay khi di chuyển 
+  vào nút bấm */
+  cursor: pointer;
+  /* phóng to dải màu to ra gấp đôi theo chiều ngang */
+  background-size: 200% auto;
+  color: white;
+  transition: background-position 0.6s ease-in-out;
+  border-radius: 28px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+/* TODO TRẠNG THÁI SAU KHI RÊ CHUỘT */
+.btn-gradient:hover {
+  background-position: right center;
+}
+.digital_content {
+  display: flex;
+  flex-direction: column;
+  color: #f55f8d;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+.digital_showcase {
+  display: flex;
+  flex-direction: column;
+  font-size: 70px;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #262626;
+}
+.digital_services {
+  display: grid;
+  grid-template-columns: repeat (3, 1fr);
+  gap: 10px;
+  margin: auto;
+  flex-direction: column;
 }

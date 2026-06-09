@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- !CSS THƯ VIỆN -->
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -15,7 +16,6 @@
     />
     <!-- !FONT GOOGLE -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
@@ -25,21 +25,28 @@
       rel="stylesheet"
       href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
     />
+    <!-- ! ANIMATE CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <!-- ! main css -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <!-- !BODY -->
   <body>
     <!-- <div class="header"></div>
-<div class="carousel"></div>
-<div class="digital"></div>
-<div class="about us"></div>
-<div class="number"></div>
-<div class="story"></div>
-<div class="portfolio"></div>
-<div class="blog"></div>
-<div class="contact"></div>
-<div class="footer"></div> -->
+    <div class="carousel"></div>
+    <div class="digital"></div>
+    <div class="about us"></div>
+    <div class="number"></div>
+    <div class="story"></div>
+    <div class="portfolio"></div>
+    <div class="blog"></div>
+    <div class="contact"></div>
+    <div class="footer"></div>
+    -->
     <!-- !HEADER -->
     <header>
       <!-- !NAV -->
@@ -98,34 +105,91 @@
     <!-- ! CAROUSEL -->
     <section class="carousel">
       <div class="carousel_content">
-        <h1>We are The Best</h1>
-        <p>
+        <h1 class="wow animate__animated animate__fadeInUp">We are The Best</h1>
+        <p class="wow animate__animated animate__fadeInUp" data-wow-delay="4s">
           Freelance Product <br />
           Designer Running
         </p>
-        <h2>
+        <h2 class="wow animate__animated animate__fadeInUp" data-wow-delay="5s">
           We develop the relationships that underpin the next phase in your<br />
           organisation’s growth.
         </h2>
-        <ul class="carousel_effect">
+        <ul
+          class="carousel_effect wow animate__animated animate__fadeInUp"
+          data-wow-delay="6s"
+        >
           <li>
             <a href="">
-              <i class="las la check"></i>
+              <i class="fa-solid fa-check"></i>
               <span> Master's degree in designing</span>
             </a>
           </li>
           <li>
             <a href="">
-              <i class="las la check"></i>
+              <i class="fa-solid fa-check"></i>
               <span>Outstanding mobile design</span>
             </a>
           </li>
         </ul>
+        <div
+          class="wow animate__animated animate__fadeInUp"
+          data-wow-delay="7s"
+        >
+          <button class="btn-gradient">GET STARTED</button>
+        </div>
       </div>
 
-      <div class="carousel_image">
+      <div
+        class="carousel_image wow animate__animated animate__fadeInUp"
+        data-wow-delay="8s"
+      >
         <img src="./css/img/pic3_1.png" alt="" />
       </div>
     </section>
-  </body>
+
 </html>
+<!-- !DIGITAL  -->
+<section class="digital">
+  <div class="digital_content">
+    <span>What We Do Best</span>
+  </div>
+  <div class="digital_showcase">
+    <span>Our Digital Services</span>
+  </div>
+</section>
+
+
+<section class="digital_services">
+<div class="digital_item">
+  <img src="./css/img/pic1_3.jpg" alt="">
+  <h3>Web Development</h3>
+  <p>Vestibulum a efficitur ex. Ut iaculis dapibus iaculis. Praesent lacus magna, rhoncus quis magna quis.</p>
+</div>
+<div class="digital_item">
+  <img src="./css/img/pic2_2.jpg" alt="">
+  <h3>Strategy & Research</h3>
+  <p>Vestibulum a efficitur ex. Ut iaculis dapibus iaculis. Praesent lacus magna, rhoncus quis magna quis.</p>
+</div>
+<div class="digital_item">
+  <img src="./css/img/pic3_2.jpg" alt="">
+  <h3>Growth Tracking
+</h3>
+  <p>Vestibulum a efficitur ex. Ut iaculis dapibus iaculis. Praesent lacus magna, rhoncus quis magna quis.</p>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+    <!-- !THƯ VIỆN WOWJS -->
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <!-- !THE ĐÓNG BODY -->
+  </body>
