@@ -77,8 +77,8 @@ header a i {
 .carousel {
   background-image: url("./img/pic2.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+
+  /* background-position: center right; */
   height: 900px;
   /* position: relative; */
   display: flex;
@@ -89,6 +89,8 @@ header a i {
   /* justify-content: space-between; */
   gap: 100px;
   margin: auto;
+  padding-bottom: 100px;
+  padding-top: 100px;
 }
 .carousel_content {
   margin-top: 25px;
@@ -152,6 +154,7 @@ header a i {
   font-size: 14px;
   margin-bottom: 10px;
 }
+/* !TRẠNG THÁI TRƯỚC KHI RÊ CHUỘT */
 .btn-gradient {
   background-image: linear-gradient(
     to right,
@@ -261,8 +264,8 @@ header a i {
   background-repeat: no-repeat;
   background-position: center right;
   background-size: 100%;
-  padding-bottom: 85px;
-  
+  padding-bottom: 100px;
+  margin-bottom: 40px;
 }
 .about img {
   border-radius: 0 100px 100px 0;
@@ -305,4 +308,16 @@ header a i {
   height: 50px;
   width: 20px;
   color: #f55f8d;
+}
+.number_content {
+  background-image: url(./img/bg14.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  /* max-width: 1200px; */
+  gap: 20px;
+  text-align: center;
+  margin-bottom: 15px;
+
 }
