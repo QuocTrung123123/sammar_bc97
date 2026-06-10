@@ -204,8 +204,103 @@ header a i {
 }
 .digital_services {
   display: grid;
-  grid-template-columns: repeat (3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 1200px;
+  gap: 30px;
+}
+.digital_item {
+  display: flex;
   flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  /* /* Tạo độ mượt 0.5 giây cho hiệu ứng thay đổi (Quan trọng) */
+  transition: all 0.5s ease;
+  border: 5px solid transparent;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.digital_item img {
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  object-fit: contain;
+
+  /* Mặc định cho phép phóng to nếu bạn muốn */
+
+  box-sizing: border-box;
+
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+}
+.digital_item:hover {
+  transform: translateY(-20px);
+  background-color: white;
+  transition: all 0.5s ease;
+  border-image: url(../css/img/br.png) 1/1/0 round;
+}
+.about {
+  display: flex;
+  align-items: center;
+  margin-left: 90px;
+  margin-right: 90px;
+  width: 100%;
+  max-width: 1600px;
+  gap: 50px;
+  margin-bottom: 50px;
+  background-image: url(./img/bg15.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 100%;
+}
+.about img {
+  border-radius: 0 100px 100px 0;
+  width: 100%;
+  flex-shrink: 0;
+  overflow: hidden;
+  max-width: 700px;
+}
+.about span {
+  font-size: 22px;
+  color: #f55f8d;
+  margin-bottom: 15px;
+  display: block;
+}
+.about h2 {
+  font-size: 70px;
+  color: #262626;
+  display: block;
+  margin-bottom: 15px;
+  /* width: 100%; */
+}
+.about p {
+  font-size: 16px;
+  color: #636363;
+  display: block;
+  margin-bottom: 15px;
+}
+.about ul {
+  list-style: none;
+  color: #636363;
+}
+.about a {
+  text-decoration: none;
+  font-size: 16px;
+}
+.about i {
+  /* tạo hình tròn  */
+  background-image: color;
+  align-items: center;
+  height: 50px;
+  width: 20px;
+  color: #f55f8d;
 }
