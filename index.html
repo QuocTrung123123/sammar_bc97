@@ -236,30 +236,97 @@
       <div class="number_content">
         <a>
           <i class="fa-regular fa-face-smile"></i>
-          <p>18MI</p>
+          <p><span class="count" data-target="18">0</span>MI</p>
           <span>Satisfied Clients</span>
         </a>
         <a>
-        <i class="fa-solid fa-chart-line"></i>
-          <p>20MI</p>
+          <i class="fa-solid fa-chart-line"></i>
+          <p><span class="count" data-target="20">0</span>MI</p>
           <span>Project Completed</span>
         </a>
         <a>
-         <i class="fa-solid fa-rocket"></i>
-          <p>30MI</p>
+          <i class="fa-solid fa-rocket"></i>
+          <p><span class="count" data-target="30">0</span>MI</p>
           <span>Project Lunched</span>
         </a>
         <a>
-          <i class="flaticon-confetti"></i>
-          <p>50MI</p>
+          <i class="fa-solid fa-fan"></i>
+          <p><span class="count" data-target="50">0</span></p>
           <span>Years Completed</span>
         </a>
       </div>
     </section>
+    <!-- !STORY -->
+    <section class="story">
+      <!-- !TRÁI -->
+      <div class="story_left">
+        <!-- **CONTENT -->
+        <div class="story_content">
+          <span>Our Features</span>
+          <h2>Behind The Story Of Samar Agency</h2>
+        </div>
+        <!-- **CARD -->
+        <div class="story_card">
+          <i class="fa-solid fa-head-side-virus"></i>
+          <h2>Idea & Analysis Gathering</h2>
+          <p>Maecenas laoreet efficitur sagittis. Aliquam eleifend nisl leo, sit amet consequat augue.</p>
+        </div>
+         
+           <div class="story_card">
+             <i class="fa-solid fa-laptop-code"></i>
+          <h2>Design & Developing</h2>
+          <p>Maecenas laoreet efficitur sagittis. Aliquam eleifend nisl leo, sit amet consequat augue.</p>
+        </div>
+      
+           <div class="story_card">
+              <i class="fa-solid fa-rocket"></i> 
+          <h2>Testing & Lunching</h2>
+          <p>Maecenas laoreet efficitur sagittis. Aliquam eleifend nisl leo, sit amet consequat augue.</p>
+        </div>
+
+      </div>
+
+      <!-- !PHẢI -->
+      <div class="story_right">
+        <img src="./css/img/pic3.png" alt="">
+      </div>
+    </section>
+
     <!-- !THƯ VIỆN WOWJS -->
     <script src="js/wow.min.js"></script>
     <script>
       new WOW().init();
+    </script>
+
+    <!-- !THƯ VIỆN JQUERY  bước 1-->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- !CẤU TRÚC HTML HIỆU ỨNG COUNTUP bước 2
+    <div class="counter-container">
+      <h1 class="count">1250</h1>
+      <h1 class="count">85</h1>
+      <h1 class="count">4500</h1>
+    </div> -->
+    <!-- !THÊM ĐOẠN MÃ JAVASCRIPT (JQUERY)Bước 3 -->
+    <script>
+      $(document).ready(function () {
+        $(".count").each(function () {
+          $(this)
+            .prop("Counter", 0)
+            .animate(
+              {
+                Counter: $(this).data("target"),
+              },
+              {
+                duration: 2000, // Thời gian chạy hiệu ứng (mili giây) - ở đây là 2 giây
+                easing: "swing", // Kiểu chuyển động mượt mà
+                step: function (now) {
+                  // Cập nhật số và làm tròn trong quá trình chạy
+                  $(this).text(Math.ceil(now));
+                },
+              },
+            );
+        });
+      });
     </script>
     <!-- !THE ĐÓNG BODY -->
   </body>
