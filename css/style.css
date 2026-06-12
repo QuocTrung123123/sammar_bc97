@@ -345,32 +345,63 @@ header a i {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  color: #F55F8D;
+  color: #f55f8d;
   font-weight: 800;
 }
 .story {
   display: flex;
   align-items: center;
-  gap: 100px;
+  gap: 50px;
+  margin: 100px auto;
+  max-width: 1200px;
+  padding: 0 40px;
+}
+.story_content {
+  margin-bottom: 30px;
 }
 .story_content span {
-  color:#F55F8D;
+  color: #f55f8d;
   font-size: 22px;
+  margin-bottom: 30px;
+  display: block;
 }
-.stpory_contetn h2 {
-  font-size: 70px;
+.story_content h2 {
+  font-size: 50px;
   color: #262626;
   margin-bottom: 100px;
 }
+/*!TRƯỚC KHI HOVER */
 .story_card {
   display: flex;
   align-items: center;
-  text-align: center;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-  border: 0 solid transparent;
-  gap: 100px;
-
+  box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.08);
+  border: 10px transparent;
+  gap: 20px;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 8px;
+  transition: 1s ease-in-out;
 }
+/* !SAU KHI HOVER */
+.story_card:hover {
+  background-image: linear-gradient(to right, #f55f8d, #f8ae56);
+  box-shadow: 10px 5px 40px rgba(0, 0, 0, 0.08);
+
+  transform: translateX(10px);
+}
+.story.story_card:hover i h2 p {
+  color: white !important;
+}
+
 .story_right img {
   height: 600px;
+}
+.story i {
+  font-size: 40px;
+}
+.story_card h2 {
+  font-weight: 500;
+}
+.story_card p {
+  font-weight: 100;
 }
