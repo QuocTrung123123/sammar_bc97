@@ -472,7 +472,6 @@ header a i {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 300px 300px 300px;
   gap: 16px;
-  
 }
 
 .portfolio_item:nth-child(1) {
@@ -508,12 +507,13 @@ header a i {
   content: "";
   top: 0;
   left: -100%;
-  width: 100px;
+  width: 50px;
   height: 100%;
   background: rgba(255, 255, 255, 0.4);
+
   transform: skewX(-25deg);
   transition: 0.7s;
-  z-index: 2;
+  /* z-index: 1; */
   position: absolute;
 }
 .portfolio_item:hover::before {
@@ -526,16 +526,17 @@ header a i {
   object-fit: cover;
   display: block;
 }
-/* !TRƯỚC KHI HOVER-PORTFOLI */
+/* !TRƯỚC KHI HOVER-PORTFOLI0 */
 .portfolio_item i {
   position: absolute;
   top: 0;
   right: 0;
   opacity: 0;
 }
-.portfolio_grid:hover .portfolio_item {
-  background-image: linear-gradient(to right, #f55f8d, #f8ae56);
+/* !SAU KHI HOVER */
+.portfolio_item:hover  {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   transition: 0.5s;
+  opacity: 1;
 }
